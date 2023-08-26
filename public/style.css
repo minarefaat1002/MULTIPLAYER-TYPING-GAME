@@ -1,0 +1,116 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+.highlight {
+    background-color: #9b9b9b;
+}
+
+.complete {
+    color: green;
+}
+
+.wrong {
+    background-color: rgb(219, 0, 0);
+}
+
+.container {
+    height: 100px;
+    margin: auto
+}
+
+.container .players {
+    padding: 30px 30px 0 30px;
+}
+
+.container .players .player {
+    margin-bottom: 30px;
+}
+
+.container .players .player .meta-data {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .players .player .meta-data div {
+    width: 25%;
+    font-size: 22px;
+}
+
+.container .players .player .progress-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .players .player .progress-wrapper::before {
+    content: "";
+    display: block;
+    position: relative;
+    left: 6px;
+    top: 4px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 1px solid #1c3d51;
+}
+
+.container .players .player .progress-wrapper::after {
+    content: "";
+    display: block;
+    position: relative;
+    top: 4px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 1px solid #1c3d51;
+}
+
+.container .players .player .progress {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-image: linear-gradient(to right, #00274a 65%, rgba(255, 255, 255, 0) 0%);
+    background-position: bottom;
+    background-size: 13px 1px;
+    background-repeat: repeat-x;
+    height: 50%;
+    margin-left: 2px;
+}
+
+.container .players .player .progress .player-circle {
+    width: 14px;
+    height: 14px;
+    top: 5px;
+    position: relative;
+    left: -10px;
+    border-radius: 50%;
+    background-color: green;
+}
+
+.container .typing-area {
+    width: 80%;
+    margin: auto;
+}
+
+#text {
+    margin-bottom: 20px;
+}
+
+#text span {
+    font-size: 28px;
+    font-weight: 800;
+    word-wrap: break-word;
+    padding: 3px;
+    /* text-wrap: nowrap; */
+}
+
+input {
+    width: 50%;
+    display: block;
+    font-size: 26px;
+    font-weight: 700;
+    margin: auto;
+    height: 36px;
+    border-radius: 14px;
+}
