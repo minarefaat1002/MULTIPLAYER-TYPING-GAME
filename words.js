@@ -9,6 +9,7 @@ var words = [
     "according",
     "account",
     "accurate",
+    "hello",
     "acres",
     "across",
     "act",
